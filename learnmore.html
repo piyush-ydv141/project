@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn More - BikerShield Smart Jackets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px #ff3c00;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ff3c00;
+      text-shadow: 0 0 10px #ff3c00aa;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #ff4c4c;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ff4c4caa;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: #111;
+      border: 1px solid #ff3c00aa;
+      padding: 20px;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 0 10px #ff3c00aa;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff3c00aa;
+    }
+
+    .feature h3 {
+      color: #ff3c00;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 50px;
+      box-shadow: 0 0 10px #ff3c00;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #ff3c00;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff3c00;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e63b00;
+      box-shadow: 0 0 20px #ff3c00;
+    }
+    
+    /* Smooth page fade on load */
+    body {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    body.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    </style>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</head>
+
+    
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BikerShield Smart Jackets</h1>
+</header>
+
+<section>
+  <h2>About the Product</h2>
+  <p>BikerShield jackets are the future of motorcycle safety gear, offering built-in airbags, smart fall detection, GPS emergency alerts, solar charging, and eco-friendly waterproof materials — all seamlessly integrated into a stylish design built for comfort and durability.</p>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</section>
+
+<section>
+  <h2>Key Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Airbag Deployment</h3>
+      <p>Instant activation during accidents, protecting critical body parts within milliseconds.</p>
+    </div>
+    <div class="feature">
+      <h3>Fall Detection</h3>
+      <p>Real-time sensors detect a fall and immediately prepare safety mechanisms.</p>
+    </div>
+    <div class="feature">
+      <h3>GPS Alerts</h3>
+      <p>Automatic emergency alerts sent with live location to pre-set contacts if accidents occur.</p>
+    </div>
+    <div class="feature">
+      <h3>Solar Charging</h3>
+      <p>Eco-friendly solar panels embedded into the jacket to keep your systems powered always.</p>
+    </div>
+    <div class="feature">
+      <h3>Eco-Friendly Materials</h3>
+      <p>Made with sustainable, waterproof, and breathable fabric designed for rugged performance.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Connectivity</h3>
+      <p>Bluetooth and mobile app integration for monitoring jacket status and emergencies.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Mission</h2>
+  <p>We believe that safety should not be optional. BikerShield is committed to delivering premium protection gear that doesn't compromise on style, comfort, or the spirit of riding free.</p>
+</section>
+
+<footer>
+  &copy; 2025 BikerShield. All rights reserved.
+</footer>
+
+</body>
+</html>
