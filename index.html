@@ -14,8 +14,14 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- ✅ AOS Animation JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>  
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+      AOS.init({ duration: 1000, once: true });
+    });
+  </script>
+
   <style>
     /* Reset */
     * {
@@ -184,10 +190,40 @@
       outline-offset: 4px;
       text-shadow: 0 0 8px #ff4c4c, 0 0 25px #ff4c4c;
     }
-        @media (max-width: 768px) {
+
+    @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
+    }
+    
+    @media (max-width: 480px) {
+    .hero {
+      background: #111; /* Replace image with solid color */
+      }
+    }
+
+    .jacket-design h2 {
+    font-size: 1.6rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+
+    .logo-container img {
+      width: 300px;
+    }
+
+    .hero {
+      background-size: cover;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .cta-button {
+      width: 80%;
     }
 
     nav {
@@ -249,12 +285,15 @@
     }
 
     .jacket-design img {
-      width: 500px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 20px;
-      box-shadow: 0 0 8px #ff4c4c88, 0 0 30px #ff4c4c55;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #ff4c4c88, 0 0 30px #ff4c4c55;
     }
+
 
     footer {
       padding: 20px;
@@ -326,13 +365,13 @@
 
   <section class="jacket-design">
     <h2>Meet the Front Side BikerShield Jacket</h2>
-    <img src="Bikerfront.png" alt="BikerShield Jacket Design">
+    <img src="Bikerfront.png" alt="BikerShield Jacket Design" loading="lazy">
     <p>The BikerShield jacket integrates advanced safety technologies such as automatic airbag deployment, fall detection, GPS-based emergency alerts, solar charging, and eco-friendly waterproof materials — making it not just gear, but a lifesaving companion.</p>
   </section>
 
   <section class="jacket-design">
     <h2>Back & Side View of BikerShield Jacket</h2>
-    <img src="Bikerback.png" alt="BikerShield Jacket Design">
+    <img src="Bikerback.png" alt="BikerShield Jacket Design" loading="lazy">
     <p>With a sleek design and advanced features, the BikerShield jacket is not just about safety; it's about style and comfort.</p>
   <section id="contact">
     <h2>Contact Us</h2>
@@ -352,3 +391,5 @@
   </script>  
 </body>
 </html>
+
+
