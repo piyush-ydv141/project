@@ -117,32 +117,35 @@
 
     /* Hero Section */
     .hero {
-      background: url('Logo BikerShield.png') no-repeat center center/cover;
-      height: 150vh;
+      background-color: #0d0d0d; 
+      background-image: url('Logo BikerShield.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
       position: relative;
-      z-index: 2;
+      padding: 0 20px;
+      text-align: center;
     }
 
     .hero::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.7);
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.75); /* dark overlay */
       z-index: 1;
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
+      max-width: 600px;
     }
+
 
     .hero h1 {
       font-size: 3.5rem;
@@ -192,16 +195,36 @@
     }
 
     @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+      @media (max-width: 768px) {
+  .hero {
+    background-size: 80%;
+    background-position: center 60px;
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+
     
-    @media (max-width: 480px) {
-    .hero {
-      background: #111; /* Replace image with solid color */
-      }
-    }
+@media (max-width: 480px) {
+  .hero {
+    background-image: url('Logo Biker.png'); 
+  }
+}
+
 
     .jacket-design h2 {
     font-size: 1.6rem;
@@ -385,9 +408,8 @@
   <script>
     AOS.init({
       duration: 1000,   
-      once: true        // Sirf ek baar animate kare scroll karte time
+      once: true       
     });
-    // Smooth scroll for navigation links
   </script>  
 </body>
 </html>
